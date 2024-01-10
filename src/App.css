@@ -8,6 +8,7 @@ body {
     padding: 0px;
 }
 
+
 :root {
     --Pblack: #303842;
     --Black: #223152;
@@ -21,6 +22,14 @@ body {
 .root {
     margin: 0px;
     padding: 0px;
+}
+.my-video{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .logo {
@@ -154,7 +163,7 @@ header {
 
 .backgroundImage {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     
@@ -167,9 +176,13 @@ header {
     bottom: 0px;
     left: 0px;
     right:0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .headline{
-    margin-top: 80px;
+  
     margin-bottom: 0px;
 
 }
