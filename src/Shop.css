@@ -1,0 +1,43 @@
+.shop{
+    width: 100%;
+    height: 100vh ;
+    border-bottom: 1px solid white;
+   
+}
+.main{
+
+}
+.shopEmail{
+    width: 550px;
+    text-align: center;
+
+}
+.feature_categories{
+    width: 100%;
+    height: 100vh ;
+    /* border: 1px solid white; */
+    padding-top:50px ;
+}
+.ShopItem{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid white; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 30px 0px 30px;
+
+}
+.ns-shop-item{
+    width: 25%;
+    height: 450px;
+    padding: 15px;
+
+}
+.Shop_item_0{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+
+}

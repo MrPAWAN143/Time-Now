@@ -5,6 +5,8 @@ import video from './../default.mp4'
 import rightarrow from './assest/icons/chevron-right.svg'
 import leftarrow from './assest/icons/chevron-left.svg'
 import { Link } from 'react-router-dom';
+import star from './assest/icons/star.svg'
+import Fimg_1 from './assest/images/Fwatch.jpg'
 
 
 export default function Home() {
@@ -39,7 +41,8 @@ export default function Home() {
                 <div className='items'>
                   <div className='slider'>
                     <div className='item'>
-                      <div className='ns-item'>
+                      <div className='ns-item '>
+                        <img src={Fimg_1} className='Fimg_1'/>
 
                       </div>
                     </div>
@@ -251,7 +254,11 @@ export default function Home() {
                     ProductName
                   </span>
                   <span className='text-white'>
-                    *****
+                  <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
                   </span>
                 </div>
                 <span className='productNamex fs-6 text-white'>
@@ -275,7 +282,11 @@ export default function Home() {
                       ProductName
                     </span>
                     <span className='text-white'>
-                      *****
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
                     </span>
                   </div>
                   <span className='productNamex fs-6 text-white'>
@@ -300,7 +311,11 @@ export default function Home() {
                     ProductName
                   </span>
                   <span className='text-white'>
-                    *****
+                  <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
                   </span>
                 </div>
                 <span className='productNamex fs-6 text-white'>
@@ -325,7 +340,11 @@ export default function Home() {
                       ProductName
                     </span>
                     <span className='text-white'>
-                      *****
+                    <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
                     </span>
                   </div>
                   <span className='productNamex fs-6 text-white'>
@@ -350,7 +369,11 @@ export default function Home() {
                     ProductName
                   </span>
                   <span className='text-white'>
-                    *****
+                  <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg'/>
                   </span>
                 </div>
                 <span className='productNamex fs-6 text-white'>
