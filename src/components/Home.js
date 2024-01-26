@@ -1,16 +1,141 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css';
+import '../Shop.css';
 import bk from './assest/images/background.jpg'
+import storeimage from './assest/images/storeimage2.webp'
 import video from './../default.mp4'
 import rightarrow from './assest/icons/chevron-right.svg'
 import leftarrow from './assest/icons/chevron-left.svg'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 import star from './assest/icons/star.svg'
 import Fimg_1 from './assest/images/Fwatch.jpg'
+import Fimg_2 from './assest/images/Fwatch2.jpg'
+import Fimg_3 from './assest/images/Fwatch3.jpg'
+import Fimg_4 from './assest/images/Fwatch4.jpg'
+import Fimg_5 from './assest/images/Fwatch5.jpg'
+import Fimg_6 from './assest/images/Fwatch6.jpg'
+
+
+import feature_1 from './assest/images/feature_1.webp'
+import feature_2 from './assest/images/feature_2.webp'
+import feature_3 from './assest/images/feature_3.jpeg'
+import feature_4 from './assest/images/feature_4.webp'
+import feature_5 from './assest/images/feature_5.webp'
+import feature_6 from './assest/images/feature_6.webp'
+
+import Img from './assest/images/imageZ.jpg'
+import img1 from './assest/images/imageZ1.jpg'
+import img2 from './assest/images/imageZ2.jpg'
+import img3 from './assest/images/imageZ3.jpg'
+import img4 from './assest/images/imageZ4.jpg'
+
+
 
 
 export default function Home() {
 
+
+  const [feature_product, setfeature_product] = useState([
+    {
+      id: 1,
+      ProductName: "Bovet",
+      Price: "Rs 49999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
+       manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_1,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 2,
+      ProductName: "Breitling",
+      Price: "Rs 59999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
+       manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_2,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 3,
+      ProductName: "Bulgari",
+      Price: "Rs 59999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to manufacture
+       watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_3,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 4,
+      ProductName: "Favre Leuba",
+      Price: "Rs 79999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
+       manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_4,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 5,
+      ProductName: "Grand Seiko",
+      Price: "Rs 99999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to 
+      manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_5,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+
+    {
+      id: 6,
+      ProductName: "Hublot",
+      Price: "Rs 109999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to 
+      manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_6,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+
+
+  ])
+
+
+  // console.log(feature_product)
+  const [feature, setfeature] = useState(feature_product)
+  console.log(feature)
 
   return (
     <>
@@ -42,32 +167,37 @@ export default function Home() {
                   <div className='slider'>
                     <div className='item'>
                       <div className='ns-item '>
-                        <img src={Fimg_1} className='Fimg_1'/>
+                        <img src={Fimg_1} className='Fimg_1' />
 
                       </div>
                     </div>
                     <div className='item'>
                       <div className='ns-item'>
+                        <img src={Fimg_2} className='Fimg_1' />
 
                       </div>
                     </div>
                     <div className='item'>
                       <div className='ns-item'>
+                        <img src={Fimg_3} className='Fimg_1' />
 
                       </div>
                     </div>
                     <div className='item'>
                       <div className='ns-item'>
+                        <img src={Fimg_4} className='Fimg_1' />
 
                       </div>
                     </div>
                     <div className='item'>
                       <div className='ns-item'>
+                        <img src={Fimg_5} className='Fimg_1' />
 
                       </div>
                     </div>
                     <div className='item'>
                       <div className='ns-item'>
+                        <img src={Fimg_6} className='Fimg_1' />
 
                       </div>
                     </div>
@@ -90,112 +220,35 @@ export default function Home() {
         </div>
 
 
-        <div className='conteniar-1'>
+        <div className='conteniar-1 mb-0 pb-0'>
           <div className='secondDiv d-flex justify-content-center align-items-center position-relative'>
             <div>
               <h3 className='featureProductHeading display-5 text-center'>
-               Feature Product
+                Feature Product
               </h3>
-
-
-
-
 
               <div className='Featur_slider'>
                 <div className='Feature_items'>
-                  <div className='Feature_item'>
+                  {(feature_product != null) ? feature_product.map((item) => <div className='Feature_item'>
                     <div className='ns_Feature_item'>
-
+                      <img src={item.Images.image_1} className='featureWatch' />
                     </div>
                     <div className='content text-center p-3'>
-                      <span className='productName fs-5 text-white'>
-                        ProductName
+                      <span className='productName fs-4 text-white'>
+                        {item.ProductName}
+                      </span>
+                      <br />
+                      <span className='productName fs-7 text-white'>
+                        {item.discripation}
                       </span>
                       <br />
 
-                      <span className='productName fs-6 text-white'>
-                        $552
+                      <span className='productName productNamexx fs-7 text-warning'>
+                        {item.Price}
                       </span>
                     </div>
 
-                  </div>
-                  <div className='Feature_item'>
-                    <div className='ns_Feature_item'>
-
-                    </div>
-                    <div className='content text-center p-3'>
-                      <span className='productName fs-5 text-white'>
-                        ProductName
-                      </span>
-                      <br />
-
-                      <span className='productName fs-6 text-white'>
-                        $552
-                      </span>
-                    </div>
-                  </div>
-                  <div className='Feature_item'>
-                    <div className='ns_Feature_item'>
-
-                    </div>
-                    <div className='content text-center p-3'>
-                      <span className='productName fs-5 text-white'>
-                        ProductName
-                      </span>
-                      <br />
-
-                      <span className='productName fs-6 text-white'>
-                        $552
-                      </span>
-                    </div>
-                  </div>
-                  <div className='Feature_item'>
-                    <div className='ns_Feature_item'>
-
-                    </div>
-                    <div className='content text-center p-3'>
-                      <span className='productName fs-5 text-white'>
-                        ProductName
-                      </span>
-                      <br />
-
-                      <span className='productName fs-6 text-white'>
-                        $552
-                      </span>
-                    </div>
-                  </div>
-                  <div className='Feature_item'>
-                    <div className='ns_Feature_item'>
-
-                    </div>
-                    <div className='content text-center p-3'>
-                      <span className='productName fs-5 text-white'>
-                        ProductName
-                      </span>
-                      <br />
-
-                      <span className='productName fs-6 text-white'>
-                        $552
-                      </span>
-                    </div>
-                  </div>
-                  <div className='Feature_item'>
-                    <div className='ns_Feature_item'>
-
-                    </div>
-                    <div className='content text-center p-3'>
-                      <span className='productName fs-5 text-white'>
-                        ProductName
-                      </span>
-                      <br />
-
-                      <span className='productName fs-6 text-white'>
-                        $552
-                      </span>
-                    </div>
-                  </div>
-
-
+                  </div>) : <h2>Data is loading</h2>}
                 </div>
 
                 <button className='rightarrow'>
@@ -216,10 +269,10 @@ export default function Home() {
 
 
 
-        <div className='newsletter'>
-          <div className='Ncontent'>
-            <h3 className='newsletter_heading fs-1 text-white'>
-              Newsletter
+        <div className='newsletter text-center mt-0'>
+          <div className='Ncontent aboout m-auto'>
+            <h3 className='newsletter_heading fs-1 aboutHeading text-white'>
+              About Your Shop
             </h3>
             <span className='discripation text-white fs-7'>
               In publishing and graphic design, Lorem
@@ -230,39 +283,37 @@ export default function Home() {
             </span>
 
           </div>
-          <div className='subscribe text-white'>
 
-            <div className='ns_subscribe'>
-              <input type='email' className='email_id' placeholder='Email Address' />
-              <button className='text-white subscribe_btn'>Subscribe</button>
-
-            </div>
-          </div>
 
         </div>
+
+
+
 
 
         <div className='Tproduct'>
           <div className='ns_Tproduct'>
             <div className='itemsz'>
 
-              <div className='ns_item '>kkk
+              <div className='ns_item '>
+                <img src={Img} className='w-100 h-100 object-fit-cover' />
+
               </div>
               <div className='disss'>
                 <div className='d-flex align-items-center justify-content-between'>
-                  <span className='productNamex fs-5 text-white'>
-                    ProductName
+                  <span className='productNamex  productnameF text-white ps-3'>
+                  MERCIER
                   </span>
                   <span className='text-white'>
-                  <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
                   </span>
                 </div>
-                <span className='productNamex fs-6 text-white'>
-                  $552
+                <span className='productNamex productNamexx text-white'>
+                &#8377; 55999.00
                 </span>
 
 
@@ -273,200 +324,165 @@ export default function Home() {
             <div className='itemsz'>
               <div className='ns_item DblProduct'>
                 <div className='item_1'>
+                  <img src={img1} className='w-100 h-100 object-fit-cover' />
 
 
                 </div>
                 <div className='disss mt-0'>
                   <div className='d-flex align-items-center justify-content-between'>
-                    <span className='productNamex fs-5 text-white ps-3'>
-                      ProductName
+                    <span className='productNamex  productnameF text-white ps-3'>
+                    PERREGAUX
                     </span>
                     <span className='text-white'>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
                     </span>
                   </div>
-                  <span className='productNamex fs-6 text-white'>
-                    $552
+                  <span className='productNamex productNamexx text-white'>
+                  &#8377; 109999.00
                   </span>
 
 
                 </div>
 
                 <div className='item_2'>
-
-
-
-
-
+                  <img src={img4} className='w-100 h-100 object-fit-cover' />
                 </div>
 
-              </div>
-              <div className='disss ms-4'>
-                <div className='d-flex align-items-center justify-content-between'>
-                  <span className='productNamex fs-5 text-white ps-3'>
-                    ProductName
-                  </span>
-                  <span className='text-white'>
-                  <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                  </span>
                 </div>
-                <span className='productNamex fs-6 text-white'>
-                  $552
-                </span>
-
-
-              </div>
-
-
-
-            </div>
-            <div className='itemsz'>
-              <div className='ns_item DblProduct'>
-                <div className='item_1'>
-
-
-                </div>
-                <div className='disss mt-0'>
+                <div className='disss ms-4'>
                   <div className='d-flex align-items-center justify-content-between'>
-                    <span className='productNamex fs-5 text-white ps-3'>
-                      ProductName
+                    <span className='productNamex  productnameF text-white ps-3'>
+                    ANONIMO
                     </span>
                     <span className='text-white'>
-                    <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
                     </span>
                   </div>
-                  <span className='productNamex fs-6 text-white'>
-                    $552
+                  <span className='productNamex productNamexx text-white'>
+                  &#8377; 309999.00
                   </span>
 
 
                 </div>
 
-                <div className='item_2'>
 
-
-
-
-
-                </div>
 
               </div>
-              <div className='disss ms-4'>
-                <div className='d-flex align-items-center justify-content-between'>
-                  <span className='productNamex fs-5 text-white ps-3'>
-                    ProductName
-                  </span>
-                  <span className='text-white'>
-                  <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                      <img src={star} className='starImg'/>
-                  </span>
-                </div>
-                <span className='productNamex fs-6 text-white'>
-                  $552
-                </span>
+              <div className='itemsz'>
+                <div className='ns_item DblProduct'>
+                  <div className='item_1'>
+                    <img src={img2} className='w-100 h-100 object-fit-cover' />
 
+                  </div>
+                  <div className='disss mt-0'>
+                    <div className='d-flex align-items-center justify-content-between'>
+                      <span className='productNamex  productnameF text-white ps-3'>
+                     SEAMASTER
+                      </span>
+                      <span className='text-white'>
+                        <img src={star} className='starImg' />
+                        <img src={star} className='starImg' />
+                        <img src={star} className='starImg' />
+                        <img src={star} className='starImg' />
+                        <img src={star} className='starImg' />
+                      </span>
+                    </div>
+                    <span className='productNamex productNamexx text-white'>
+                    &#8377; 103499.00
+                    </span>
+
+
+                  </div>
+
+                  <div className='item_2'>
+
+
+                    <img src={img3} className='w-100 h-100 object-fit-cover' />
+
+
+                  </div>
+
+                </div>
+                <div className='disss ms-4'>
+                  <div className='d-flex align-items-center justify-content-between'>
+                    <span className='productNamex  productnameF text-white ps-3'>
+                    HUBLOT
+                    </span>
+                    <span className='text-white'>
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                      <img src={star} className='starImg' />
+                    </span>
+                  </div>
+                  <span className='productNamex productNamexx text-white'>
+                  &#8377; 305999.00
+                  </span>
+
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div className='newsletter'>
+            <div className='Ncontent'>
+              <h3 className='newsletter_heading fs-1 text-white'>
+                Newsletter
+              </h3>
+              <span className='discripation text-white fs-7'>
+                In publishing and graphic design, Lorem
+                ipsum is a placeholder text commonly used to
+                demonstrate the visual form of a document
+                or a typeface without relying on meaningful
+
+              </span>
+
+            </div>
+            <div className='subscribe text-white'>
+
+              <div className='ns_subscribe'>
+                <input type='email' className='email_id' placeholder='Email Address' />
+                <button className='text-white subscribe_btn'>Subscribe</button>
 
               </div>
             </div>
 
           </div>
 
+
+
+
+          <div className='newsletter headfooter text-center border-0'>
+            <div className='Ncontent footer m-auto'>
+
+              <div className='footerItems_1'>
+                <img src={storeimage} className='img-fluid object-fit-cover rounded rounded-2' />
+                <address className='text-white '>
+                  717 South ex metro station gate no 2 g block 110023
+                </address>
+              </div>
+
+              <Footer />
+
+            </div>
+          </div>
+
+
+
         </div>
-
-
-
-        <div className='newsletter text-center'>
-          <div className='Ncontent aboout m-auto'>
-            <h3 className='newsletter_heading fs-1 aboutHeading text-white'>
-             About Your Shop
-            </h3>
-            <span className='discripation text-white fs-7'>
-              In publishing and graphic design, Lorem
-              ipsum is a placeholder text commonly used to
-              demonstrate the visual form of a document
-              or a typeface without relying on meaningful
-
-            </span>
-
-          </div>
-         
-
-        </div>
-
-
-        <div className='newsletter headfooter text-center'>
-          <div className='Ncontent footer m-auto'>
-
-          <div className='footerItems_1'>
-            <img src=''  className=''/>
-          <address className='text-white '>
-              717 South ex metro station gate no 2 g block 110023
-          </address>
-          </div>
-
-          <div className='footerItems_2'>
-            <ul className='text-start footerNav pt-4flink'>
-              <li className=' d-block m-auto text-center text-white fs-6'><strong>MAIN MENU</strong></li>
-              <li className='flink'><Link to={'home'} className=''>Home</Link></li>
-              <li className='flink'><Link to={'about'} className=''>About</Link></li>
-              <li className='flink'><Link to={'shop'} className=''>Shop</Link></li>
-              <li className='flink'><Link to={'help'} className=''>Help</Link></li>
-
-            </ul>
-
-          </div>
-          <div className='footerItems_3'>
-          <ul className='text-start footerNav pt-4flink'>
-              <li className=' d-block m-auto text-center text-white fs-6'><strong>COMPANY</strong></li>
-              <li className='flink'><Link to={'company'} className=''>The Company</Link></li>
-              <li className='flink'><Link to={'careers'} className=''>Careers</Link></li>
-              <li className='flink'><Link to={'press'} className=''>Press</Link></li>
-
-
-            </ul>
-          </div>
-          <div className='footerItems_4'>
-          <ul className='text-start footerNav pt-4flink'>
-              <li className=' d-block m-auto text-center text-white fs-6'><strong>DISCOVER</strong></li>
-              <li className='flink'><Link to={'team'} className=''>The Team</Link></li>
-              <li className='flink'><Link to={'history'} className=''>Our History</Link></li>
-              <li className='flink'><Link to={'motto'} className=''>Brand Motto</Link></li>
-
-
-            </ul>
-          </div>
-          <div className='footerItems_5'>
-          <ul className='text-start footerNav pt-4flink'>
-              <li className=' d-block m-auto text-center text-white fs-6'><strong>FIND US ON</strong></li>
-              <li className='flink'><Link to={'instagram'} className=''>Instagram</Link></li>
-              <li className='flink'><Link to={'facebook'} className=''>Facebook</Link></li>
-              <li className='flink'><Link to={'twitter'} className=''>Twitter</Link></li>
-
-
-            </ul>
-          </div>
-            
-          </div>
-        </div>
-
-
-
-      </div>
-    </>
-  )
+      </>
+      )
 }

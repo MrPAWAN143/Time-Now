@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+#root{
+    width: 1280px;
+    margin: auto;
+}
 
 html,
 body {
@@ -96,7 +100,7 @@ body {
 .input_bar {
     padding: 5px;
     border: 1px solid var(--Pblack);
-    border-radius: 2px;
+    border-radius: 6px;
     background-color: white;
 
 
@@ -107,11 +111,12 @@ header {
     height: 80px;
     background-color: black;
     color: var(--Text);
-    box-shadow: 0px 0px 2px rgb(255, 255, 255);
+    /* box-shadow: 0px 0px 2px rgb(255, 255, 255); */
     position: sticky;
     top: 0px;
     z-index: 5;
     font-size: 15px;
+    border-bottom: 0.1px solid white !important;
 
 }
 
@@ -232,7 +237,7 @@ header {
 }
 
 .ns-item {
-    border: 1px solid white;
+    border: 1px solid rgb(146, 141, 141);
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -304,6 +309,20 @@ header {
     width: 100%;
     height: 320px;
     border: 1px solid white;
+    overflow: hidden;
+  
+}
+.ns_Feature_item:hover .featureWatch{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+}
+
+.featureWatch{
+    width: 470px;
+    height: 320px;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+   
 }
 
 .rightarrow {
@@ -363,7 +382,7 @@ header {
     width: 100%;
     height: 220px;
     /* border: 1px solid white; */
-    margin-top: 20px;
+    margin-top:20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -390,7 +409,7 @@ header {
 }
 
 .email_id {
-    width: 300px;
+    width: 60%;
     height: 40px;
     border: 1px solid var(--Pblack);
     outline: none;
@@ -509,7 +528,7 @@ header {
 .footerItems_1{
     width: 30%;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   
 
 }
@@ -531,25 +550,26 @@ header {
 .footerItems_2{
     width: 17%;
     height: 100%;
-    border: 1px solid white;
+    
+    /* border: 1px solid white; */
 
 }
 .footerItems_3{
     width: 17%;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
 }
 .footerItems_4{
     width: 17%;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
 }
 .footerItems_5{
     width: 17%;
     height: 100%;
-    border: 1px solid white;
+    /* border: 0.5px solid white; */
 
 }
 .footerNav{
@@ -568,6 +588,7 @@ header {
 }
 .footerNav .flink:hover{
     background-color: white;
+    border-radius: 5px;
     
 }
 .footerNav .flink:hover a{
@@ -608,4 +629,16 @@ transition: 500ms ease-in-out;
     height: 100%;
     object-fit: cover;
     transition: 500ms ease-in-out;
+}
+
+.productNamexx{
+    font-size: 12px !important;
+    color: rgb(232, 97, 97) !important;
+    text-align: center !important;
+    margin-left: -25px !important;
+}
+
+.productnameF{
+    font-size: 15px;
+    text-align: start !important;
 }

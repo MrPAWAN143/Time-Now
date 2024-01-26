@@ -2,13 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom';
-import logox from './components/assest/images/logo192.png'
+import logox from './components/assest/images/logo.jpg'
 import Home from './components/Home'
 import About from './components/About'
 import Shop from './components/Shop';
 import Help from './components/Help';
 import YourCart from './components/YourCart';
 import searchicon from './components/assest/icons/search.svg'
+
 
 
 
@@ -22,7 +23,7 @@ function App() {
           <div className="container-sm-fluid container">
             <nav className='d-flex align-items-center justify-content-between w-100'>
               <div className='logo'>
-                <Link to={'home'}> <img src={logox} className='logo' /></Link>
+                <Link to={'/'}> <img src={logox} className='logo' /></Link>
               </div>
 
               <div className='search container-sm-heddin'>
@@ -72,6 +73,7 @@ function App() {
           <Route path="/home" element={<Home />} ></Route>
           <Route path="/about" element={<About />} ></Route>
           <Route path="/shop" element={<Shop />} ></Route>
+          <Route path="/shop/about" element={<Home />} ></Route>
           <Route path="/help" element={<Help />} ></Route>
           <Route path="/cart" element={<YourCart />} ></Route>
 
