@@ -2,8 +2,8 @@ import React from 'react'
 import '../App.css'
 import { Link } from 'react-router-dom'
 import '../../src/Shop.css'
-import bk from './assest/images/background.jpg'
-import Fimg_1 from './assest/images/Fwatch.jpg'
+import bk from './assest/images/Shopbackground.webp'
+import Fimg_1 from './assest/images/wnews1.webp'
 import star from './assest/icons/star.svg'
 import Fimg_2 from './assest/images/Fwatch2.jpg'
 import Fimg_3 from './assest/images/Fwatch3.jpg'
@@ -11,12 +11,12 @@ import Fimg_4 from './assest/images/Fwatch4.jpg'
 import Fimg_5 from './assest/images/Fwatch5.jpg'
 import Fimg_6 from './assest/images/Fwatch6.jpg'
 
-import feature_1 from './assest/images/feature_1.webp'
-import feature_2 from './assest/images/feature_2.webp'
-import feature_3 from './assest/images/feature_3.jpeg'
-import feature_4 from './assest/images/feature_4.webp'
-import feature_5 from './assest/images/feature_5.webp'
-import feature_6 from './assest/images/feature_6.webp'
+import feature_1 from './assest/images/sp_1_1.webp'
+import feature_2 from './assest/images/sp_2.webp'
+import feature_3 from './assest/images/sp_3.webp'
+import feature_4 from './assest/images/sp_4.webp'
+import feature_5 from './assest/images/sp_5.webp'
+import feature_6 from './assest/images/sp_6.webp'
 import locationimg from './assest/images/storeImage.webp'
 
 import { useState } from 'react'
@@ -29,110 +29,125 @@ import Footer from './Footer'
 
 export default function Shop() {
 
-  const backgroundImage = {
-    backgroundPosition: 'center'
-  }
-
-  const [product , setproduct] = useState([
-    {
-    id:1,
-    ProductName:"Bovet",
-    Price:"Rs 49999",
-    discripation:`Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
-     manufacture watches for the Chinese market. Pascal Raffy`,
-    Images:{
-      image_1:feature_1,
-      image_2:{Fimg_2},
-      image_3:{Fimg_3},
-      image_4:{Fimg_4}
-    },
-    
-    
-  },
-    {
-    id:2,
-    ProductName:"Breitling",
-    Price:"Rs 59999",
-    discripation:`Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
-     manufacture watches for the Chinese market. Pascal Raffy`,
-    Images:{
-      image_1:feature_2,
-      image_2:{Fimg_2},
-      image_3:{Fimg_3},
-      image_4:{Fimg_4}
-    },
-    
-    
-  },
-  {
-    id:3,
-    ProductName:"Bulgari",
-    Price:"Rs 59999",
-    discripation:`Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to manufacture
-     watches for the Chinese market. Pascal Raffy`,
-    Images:{
-      image_1:feature_3,
-      image_2:{Fimg_2},
-      image_3:{Fimg_3},
-      image_4:{Fimg_4}
-    },
-    
-    
-  },
-  {
-    id:4,
-    ProductName:"Favre Leuba",
-    Price:"Rs 79999",
-    discripation:`Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
-     manufacture watches for the Chinese market. Pascal Raffy`,
-    Images:{
-      image_1:feature_4,
-      image_2:{Fimg_2},
-      image_3:{Fimg_3},
-      image_4:{Fimg_4}
-    },
-    
-    
-  },
-  {
-    id:5,
-    ProductName:"Grand Seiko",
-    Price:"Rs 99999",
-    discripation:`Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to 
-    manufacture watches for the Chinese market. Pascal Raffy`,
-    Images:{
-      image_1:feature_5,
-      image_2:{Fimg_2},
-      image_3:{Fimg_3},
-      image_4:{Fimg_4}
-    },
-    
-    
-  },
-  
-  {
-    id:6,
-    ProductName:"Hublot",
-    Price:"Rs 109999",
-    discripation:`Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to 
-    manufacture watches for the Chinese market. Pascal Raffy`,
-    Images:{
-      image_1:feature_6,
-      image_2:{Fimg_2},
-      image_3:{Fimg_3},
-      image_4:{Fimg_4}
-    },
-    
-    
-  },
-  
  
-])
+
+  
+
+  const [product, setproduct] = useState([
+    {
+      id: 1,
+      ProductName: "Bovet",
+      Price: "Rs 49999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
+     manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_1,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 2,
+      ProductName: "Breitling",
+      Price: "Rs 59999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
+     manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_2,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 3,
+      ProductName: "Bulgari",
+      Price: "Rs 59999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to manufacture
+     watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_3,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 4,
+      ProductName: "Favre Leuba",
+      Price: "Rs 79999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to
+     manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_4,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+    {
+      id: 5,
+      ProductName: "Grand Seiko",
+      Price: "Rs 99999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to 
+    manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_5,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+
+    {
+      id: 6,
+      ProductName: "Hublot",
+      Price: "Rs 109999",
+      discripation: `Watchmaker Edouard Bovet’s Bovet was founded in London in 1822 to 
+    manufacture watches for the Chinese market. Pascal Raffy`,
+      Images: {
+        image_1: feature_6,
+        image_2: { Fimg_2 },
+        image_3: { Fimg_3 },
+        image_4: { Fimg_4 }
+      },
+
+
+    },
+
+
+  ]
+  
+  
+  )
+ 
+
   return (
 
+
     <>
-      <div className='container-xl-fluit pt-3 pb-3 shop'>
-        <div className='backgroundImage position-relative' style={{ backgroundImage: `url(${bk})` }}>
+
+   
+
+
+
+      <div className='container-fluit pt-3 pb-3 shop'>
+        <div className='backgroundImage position-relative' style={{
+          backgroundImage: `url(${bk})`,
+          backgroundSize: "cover",
+          backgroundPosition: "left"
+        }}>
 
           <div className='overlay'>
 
@@ -168,7 +183,7 @@ export default function Shop() {
 
 
 
-          
+
           <h3 className='display-5 text-white text-center w-100'>
             Feature Categories
           </h3>
@@ -182,36 +197,36 @@ export default function Shop() {
 
           <div className='ShopItem'>
             <div className='ns-shop-item'>
-              <div className='Shop_item_0'>
+              <div className='Shop_item_0 si_1'>
 
               </div>
 
-              <span className='productName fs-5 text-white d-block mt-2 w-100 text-center'>
-                CATEGORY
+              <span className='productName pn_1 fs-5 text-white d-block mt-2 w-100 text-center'>
+                SPOTLIGHT
               </span>
 
             </div>
             <div className='ns-shop-item'>
-              <div className='Shop_item_0'>
+              <div className='Shop_item_0 si_2'>
 
               </div>
-              <span className='productName fs-5 text-white d-block mt-2 w-100 text-center'>
-                CATEGORY
+              <span className='productName pn_2 fs-5 text-white d-block mt-2 w-100 text-center'>
+                REVIEW
               </span>
             </div>
             <div className='ns-shop-item'>
-              <div className='Shop_item_0'>
+              <div className='Shop_item_0 si_3'>
 
               </div>
               <span className='productName fs-5 text-white d-block mt-2 w-100 text-center'>
-                CATEGORY
+                EXCLUSIVE
               </span>
             </div>
             <div className='ns-shop-item'>
               <Link to={'about'}>
-                <div className='Shop_item_0 position-relative'>
+                <div className='Shop_item_0 si_4 position-relative'>
                   <div className='overlay'>
-                    <span className='productName fs-5 text-white d-block mt-2 w-100 text-center zn-4 lh'>
+                    <span className='productName  fs-4 text-white d-block mt-2 w-100 text-center zn-4 lh'>
                       Shop Now
                     </span>
                   </div>
@@ -232,7 +247,7 @@ export default function Shop() {
 
 
         <div className=' border_right'>
-          <img src={Fimg_1} className='w-100 h-100' />
+          <img src={Fimg_1} className='w-100 h-100 object-fit-cover wnews' />
 
         </div>
 
@@ -285,10 +300,9 @@ export default function Shop() {
 
           <div className='d-flex align-items-center flex-wrap w-100 shop_parents justify-content-between'>
 
-            {(product != null) ?product.map((item) => <Link className=' shopItem nav-link'>
+            {(product != null) ? product.map((item) => <Link to={'/#'} key={item.id} className='shopItem nav-link'>
               <div className='border_right imageItem'>
-                <img src={item.Images.image_1} className='w-100 h-100 object-fit-cover' />
-
+                <img src={item.Images.image_1} className='shopImageAll w-100 h-100 object-fit-cover'/>
               </div>
               <div className='border_right ProductNameItem p-3'>
 
@@ -314,7 +328,7 @@ export default function Shop() {
 
 
 
-           
+
 
           </div>
 
@@ -323,7 +337,7 @@ export default function Shop() {
       </div>
 
 
-      <div className='newsletter headfooter text-center border_right'>
+      <div className='newsletter headfooter text-center'>
         <div className='Ncontent footer m-auto'>
 
           <div className='footerItems_1'>
@@ -333,7 +347,7 @@ export default function Shop() {
             </address>
           </div>
 
-         <Footer/>
+          <Footer />
 
         </div>
       </div>

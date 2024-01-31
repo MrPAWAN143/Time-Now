@@ -7,7 +7,7 @@ export default function Shoppingdetails() {
     <>
       <div className="container shoppingmenu d-flex gap-3 mt-1">
         <div className="w-75  ps-5 pe-5 ">
-          <h3 className='text-white display-7 p-2 cartShoping'>Shopping Cart</h3>
+          <h3 className='text-white display-7 p-2 cartShoping'>Shopping Details</h3>
 
 
           <div className='justborder p-4'>

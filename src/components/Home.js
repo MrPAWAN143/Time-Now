@@ -295,7 +295,7 @@ export default function Home() {
           <div className='ns_Tproduct'>
             <div className='itemsz'>
 
-              <div className='ns_item '>
+              <div className='ns_item scale'>
                 <img src={Img} className='w-100 h-100 object-fit-cover' />
 
               </div>
@@ -323,7 +323,7 @@ export default function Home() {
 
             <div className='itemsz'>
               <div className='ns_item DblProduct'>
-                <div className='item_1'>
+                <div className='item_1 scale'>
                   <img src={img1} className='w-100 h-100 object-fit-cover' />
 
 
@@ -348,7 +348,7 @@ export default function Home() {
 
                 </div>
 
-                <div className='item_2'>
+                <div className='item_2 scale'>
                   <img src={img4} className='w-100 h-100 object-fit-cover' />
                 </div>
 
@@ -378,7 +378,7 @@ export default function Home() {
               </div>
               <div className='itemsz'>
                 <div className='ns_item DblProduct'>
-                  <div className='item_1'>
+                  <div className='item_1 scale'>
                     <img src={img2} className='w-100 h-100 object-fit-cover' />
 
                   </div>
@@ -402,7 +402,7 @@ export default function Home() {
 
                   </div>
 
-                  <div className='item_2'>
+                  <div className='item_2 scale'>
 
 
                     <img src={img3} className='w-100 h-100 object-fit-cover' />
