@@ -15,7 +15,7 @@ body {
 
 
 :root {
-    --Pblack: #0d444a;
+    --Pblack: rgba(21, 48, 58, 0.74);
     --Black: #0d0f149b;
     --Second: #0D0E0F;
     --DipBlue: #1D69DB;
@@ -55,7 +55,7 @@ body {
     font-size: 16px;
     color: var(--Pblack);
     border-radius: 0px !important;
-    background-color: white;
+    background-color: #ffffff00;
 
 }
 
@@ -101,7 +101,7 @@ body {
     padding: 5px;
     border: 1px solid var(--Pblack);
     border-radius: 6px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.845);
 
 
 }
@@ -116,7 +116,7 @@ header {
     top: 0px;
     z-index: 5;
     font-size: 15px;
-    border-bottom: 0.1px solid white !important;
+    border-bottom: 0.1px solid rgb(146, 141, 141) !important;
 
 }
 
@@ -147,7 +147,7 @@ header {
 }
 
 .input_bar:hover {
-    outline: 2px solid #ffffff;
+    outline: 2px solid rgba(255, 255, 255, 0.845);
 }
 
 /* #myvideo{
@@ -220,7 +220,7 @@ header {
 }
 
 .slider {
-    width: 200%;
+    /* width: 200%; */
     margin-top: auto;
     display: flex;
     align-items: end;
@@ -246,7 +246,7 @@ header {
 
 .homeShop {
     /* width: 150px; */
-    background-color: white;
+    background-color:  rgba(255, 255, 255, 0.845);
     color: black;
     border: none;
     padding: 7px 45px;
@@ -264,8 +264,8 @@ header {
     height: auto;
     background-color: #000000;
     margin-top: 31px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid rgb(146, 141, 141);
+    border-bottom: 1px solid rgb(146, 141, 141);
     padding: 30px;
 
 }
@@ -279,7 +279,7 @@ header {
 }
 
 .featureProductHeading {
-    color: white;
+    color: rgb(255 255 255 / 74%);
     margin-bottom: 50px;
 }
 
@@ -309,7 +309,7 @@ header {
 .ns_Feature_item {
     width: 100%;
     height: 320px;
-    border: 1px solid white;
+    border: 1px solid rgb(146, 141, 141);
     overflow: hidden;
     border-radius: 8px;
   
@@ -389,7 +389,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(146, 141, 141);
 }
 
 .Ncontent {
@@ -413,7 +413,7 @@ header {
 .email_id {
     width: 60%;
     height: 40px;
-    border: 1px solid var(--Pblack);
+    border:1px solid rgb(146, 141, 141);
     outline: none;
     padding: 0px 10px;
 }
@@ -443,7 +443,7 @@ header {
     height: 85vh;
     /* border: 1px solid white; */
     margin-top: 80px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(146, 141, 141);
 
 }
 .ns_Tproduct{
@@ -463,7 +463,7 @@ header {
 .ns_item{
     width: 90%;
     height: 80%;
-    border: 1px solid white;
+    border: 1px solid rgb(146, 141, 141);
     margin:auto;
     border-radius: 8px;
   
@@ -498,12 +498,12 @@ header {
 .item_1{
     width: 80%;
     height: 35%;
-    border: 1px solid white;
+    border: 1px solid rgb(146, 141, 141);
 }
 .item_2{
     width: 80%;
     height: 35%;
-    border: 1px solid white;
+    border: 1px solid rgb(146, 141, 141);
 }
 
 .aboout{
@@ -601,7 +601,7 @@ color: black !important;
 
 .footerNav li a{
     text-decoration: none !important;
-    color: white !important;
+    color: rgb(255 255 255 / 74%)!important;
 }
 
 
@@ -648,4 +648,13 @@ transition: 500ms ease-in-out;
 .productnameF{
     font-size: 15px;
     text-align: start !important;
+}
+
+
+
+
+/* extra css  */
+
+.headline{
+    color:  rgb(255 255 255 / 74%);
 }

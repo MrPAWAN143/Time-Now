@@ -4,8 +4,10 @@
     border-bottom: 1px solid white;
 
 }
+.footerItems_1{
+    margin-left:-40px;
 
-.main {}
+}
 
 .shopEmail {
     width: 550px;
@@ -501,8 +503,9 @@ font-size: 12px !important;
 }
 
 .AboutFooter{
-    border-top: 1px solid white;
-    padding: 40px;
+    border-top:1px solid rgba(255, 255, 255, 0.845);
+    /* border-bottom:1px solid rgba(255, 255, 255, 0.845); */
+    padding: 0px 40px 40px 40px;
 }
 
 .border_right{
@@ -511,10 +514,14 @@ font-size: 12px !important;
 
 
 /* <>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<> */
+.item_1 , .item_2{
+height: 190px;
+}
+
 .scale{
     overflow: hidden;
     border-radius:6px ;
-    
+
  
 }
 .Shop_item_0{

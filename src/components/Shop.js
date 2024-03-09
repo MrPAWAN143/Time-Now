@@ -337,20 +337,12 @@ export default function Shop() {
       </div>
 
 
-      <div className='newsletter headfooter text-center'>
-        <div className='Ncontent footer m-auto'>
 
-          <div className='footerItems_1'>
-            <img src={locationimg} className='rounded rounded-3' />
-            <address className='text-white '>
-              717 South ex metro station gate no 2 g block 110023
-            </address>
-          </div>
 
           <Footer />
 
-        </div>
-      </div>
+    
+      
 
     </>
 

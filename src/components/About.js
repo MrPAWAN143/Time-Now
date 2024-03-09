@@ -19,7 +19,7 @@ export default function About() {
   return (
     <>
 
-      <div className=''>
+      <div className='all_text'>
         <div className='Abackgroundimage' style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
@@ -301,21 +301,21 @@ export default function About() {
           </div>
 
 
-        <div className='Ncontent footer m-auto mt-5 AboutFooter'>
+       
 
-          <div className='footerItems_1'>
+          {/* <div className='footerItems_1'>
             <img src={storeimage2}className='img-fluid rounded rounded-3' />
 
             <address className='text-white '>
               717 South ex metro station gate no 2 g block 110023
             </address>
-          </div>
+          </div> */}
 
           <Footer />
 
         </div>
 
-        </div>
+
 
 
       </div>

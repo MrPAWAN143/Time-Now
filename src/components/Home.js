@@ -135,7 +135,10 @@ export default function Home() {
 
   // console.log(feature_product)
   const [feature, setfeature] = useState(feature_product)
-  console.log(feature)
+  // console.log(feature)
+
+
+
 
   return (
     <>
@@ -153,7 +156,7 @@ export default function Home() {
             </video>
             <div className='overlay'>
               <div className='hero-content'>
-                <h3 className='display-5 text-white text-center headline'>
+                <h3 className='display-5 text-center headline'>
                   <span >
                     Product
                   </span>
@@ -234,11 +237,11 @@ export default function Home() {
                       <img src={item.Images.image_1} className='featureWatch' />
                     </div>
                     <div className='content text-center p-3'>
-                      <span className='productName fs-4 text-white'>
+                      <span className='productName fs-4 headline'>
                         {item.ProductName}
                       </span>
                       <br />
-                      <span className='productName fs-7 text-white'>
+                      <span className='productName fs-7 headline'>
                         {item.discripation}
                       </span>
                       <br />
@@ -271,10 +274,10 @@ export default function Home() {
 
         <div className='newsletter text-center mt-0'>
           <div className='Ncontent aboout m-auto'>
-            <h3 className='newsletter_heading fs-1 aboutHeading text-white'>
+            <h3 className='newsletter_heading fs-1 aboutHeading headline'>
               About Your Shop
             </h3>
-            <span className='discripation text-white fs-7'>
+            <span className='discripation headline fs-7'>
               In publishing and graphic design, Lorem
               ipsum is a placeholder text commonly used to
               demonstrate the visual form of a document
@@ -301,10 +304,10 @@ export default function Home() {
               </div>
               <div className='disss'>
                 <div className='d-flex align-items-center justify-content-between'>
-                  <span className='productNamex  productnameF text-white ps-3'>
-                  MERCIER
+                  <span className='productNamex  productnameF headline ps-3'>
+                    MERCIER
                   </span>
-                  <span className='text-white'>
+                  <span className='headline'>
                     <img src={star} className='starImg' />
                     <img src={star} className='starImg' />
                     <img src={star} className='starImg' />
@@ -312,8 +315,8 @@ export default function Home() {
                     <img src={star} className='starImg' />
                   </span>
                 </div>
-                <span className='productNamex productNamexx text-white'>
-                &#8377; 55999.00
+                <span className='productNamex productNamexx headline'>
+                  &#8377; 55999.00
                 </span>
 
 
@@ -330,10 +333,10 @@ export default function Home() {
                 </div>
                 <div className='disss mt-0'>
                   <div className='d-flex align-items-center justify-content-between'>
-                    <span className='productNamex  productnameF text-white ps-3'>
-                    PERREGAUX
+                    <span className='productNamex  productnameF headline ps-3'>
+                      PERREGAUX
                     </span>
-                    <span className='text-white'>
+                    <span className='headline'>
                       <img src={star} className='starImg' />
                       <img src={star} className='starImg' />
                       <img src={star} className='starImg' />
@@ -341,8 +344,8 @@ export default function Home() {
                       <img src={star} className='starImg' />
                     </span>
                   </div>
-                  <span className='productNamex productNamexx text-white'>
-                  &#8377; 109999.00
+                  <span className='productNamex productNamexx headline'>
+                    &#8377; 109999.00
                   </span>
 
 
@@ -352,71 +355,42 @@ export default function Home() {
                   <img src={img4} className='w-100 h-100 object-fit-cover' />
                 </div>
 
-                </div>
-                <div className='disss ms-4'>
-                  <div className='d-flex align-items-center justify-content-between'>
-                    <span className='productNamex  productnameF text-white ps-3'>
+              </div>
+              <div className='disss ms-4'>
+                <div className='d-flex align-items-center justify-content-between'>
+                  <span className='productNamex  productnameF headline ps-3'>
                     ANONIMO
-                    </span>
-                    <span className='text-white'>
-                      <img src={star} className='starImg' />
-                      <img src={star} className='starImg' />
-                      <img src={star} className='starImg' />
-                      <img src={star} className='starImg' />
-                      <img src={star} className='starImg' />
-                    </span>
-                  </div>
-                  <span className='productNamex productNamexx text-white'>
+                  </span>
+                  <span className='headline'>
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                  </span>
+                </div>
+                <span className='productNamex productNamexx headline'>
                   &#8377; 309999.00
-                  </span>
-
-
-                </div>
-
+                </span>
 
 
               </div>
-              <div className='itemsz'>
-                <div className='ns_item DblProduct'>
-                  <div className='item_1 scale'>
-                    <img src={img2} className='w-100 h-100 object-fit-cover' />
-
-                  </div>
-                  <div className='disss mt-0'>
-                    <div className='d-flex align-items-center justify-content-between'>
-                      <span className='productNamex  productnameF text-white ps-3'>
-                     SEAMASTER
-                      </span>
-                      <span className='text-white'>
-                        <img src={star} className='starImg' />
-                        <img src={star} className='starImg' />
-                        <img src={star} className='starImg' />
-                        <img src={star} className='starImg' />
-                        <img src={star} className='starImg' />
-                      </span>
-                    </div>
-                    <span className='productNamex productNamexx text-white'>
-                    &#8377; 103499.00
-                    </span>
 
 
-                  </div>
 
-                  <div className='item_2 scale'>
-
-
-                    <img src={img3} className='w-100 h-100 object-fit-cover' />
-
-
-                  </div>
+            </div>
+            <div className='itemsz'>
+              <div className='ns_item DblProduct'>
+                <div className='item_1 scale'>
+                  <img src={img2} className='w-100 h-100 object-fit-cover' />
 
                 </div>
-                <div className='disss ms-4'>
+                <div className='disss mt-0'>
                   <div className='d-flex align-items-center justify-content-between'>
-                    <span className='productNamex  productnameF text-white ps-3'>
-                    HUBLOT
+                    <span className='productNamex  productnameF headline ps-3'>
+                      SEAMASTER
                     </span>
-                    <span className='text-white'>
+                    <span className='headline'>
                       <img src={star} className='starImg' />
                       <img src={star} className='starImg' />
                       <img src={star} className='starImg' />
@@ -424,65 +398,81 @@ export default function Home() {
                       <img src={star} className='starImg' />
                     </span>
                   </div>
-                  <span className='productNamex productNamexx text-white'>
-                  &#8377; 305999.00
+                  <span className='productNamex productNamexx headline'>
+                    &#8377; 103499.00
                   </span>
 
 
                 </div>
+
+                <div className='item_2 scale'>
+
+
+                  <img src={img3} className='w-100 h-100 object-fit-cover' />
+
+
+                </div>
+
               </div>
 
+              <div className='disss ms-4'>
+                <div className='d-flex align-items-center justify-content-between'>
+                  <span className='productNamex  productnameF headline ps-3'>
+                    HUBLOT
+                  </span>
+                  <span className='headline'>
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                    <img src={star} className='starImg' />
+                  </span>
+                </div>
+                <span className='productNamex productNamexx headline'>
+                  &#8377; 305999.00
+                </span>
+
+
+              </div>
             </div>
 
           </div>
-
-
-          <div className='newsletter'>
-            <div className='Ncontent'>
-              <h3 className='newsletter_heading fs-1 text-white'>
-                Newsletter
-              </h3>
-              <span className='discripation text-white fs-7'>
-                In publishing and graphic design, Lorem
-                ipsum is a placeholder text commonly used to
-                demonstrate the visual form of a document
-                or a typeface without relying on meaningful
-
-              </span>
-
-            </div>
-            <div className='subscribe text-white'>
-
-              <div className='ns_subscribe'>
-                <input type='email' className='email_id' placeholder='Email Address' />
-                <button className='text-white subscribe_btn'>Subscribe</button>
-
-              </div>
-            </div>
-
-          </div>
-
-
-
-
-          <div className='newsletter headfooter text-center border-0'>
-            <div className='Ncontent footer m-auto'>
-
-              <div className='footerItems_1'>
-                <img src={storeimage} className='img-fluid object-fit-cover rounded rounded-2' />
-                <address className='text-white '>
-                  717 South ex metro station gate no 2 g block 110023
-                </address>
-              </div>
-
-              <Footer />
-
-            </div>
-          </div>
-
-
 
         </div>
-      </>
-      )
+
+
+        <div className='newsletter'>
+          <div className='Ncontent'>
+            <h3 className='newsletter_heading fs-1 headline'>
+              Newsletter
+            </h3>
+            <span className='discripation headline fs-7'>
+              In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to
+              demonstrate the visual form of a document
+              or a typeface without relying on meaningful
+
+            </span>
+
+          </div>
+          <div className='subscribe headline'>
+
+            <div className='ns_subscribe'>
+              <input type='email' className='email_id' placeholder='Email Address' />
+              <button className='headline subscribe_btn'>Subscribe</button>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+        <Footer />
+
+      </div>
+    </>
+  )
 }
