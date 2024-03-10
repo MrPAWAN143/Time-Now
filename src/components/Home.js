@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import '../App.css';
 import '../Shop.css';
 import bk from './assest/images/background.jpg'
-import storeimage from './assest/images/storeimage2.webp'
 import video from './../default.mp4'
 import rightarrow from './assest/icons/chevron-right.svg'
 import leftarrow from './assest/icons/chevron-left.svg'
@@ -246,9 +245,9 @@ export default function Home() {
                       </span>
                       <br />
 
-                      <span className='productName productNamexx fs-7 text-warning'>
+                      <em className='productName productNamexx fs-7 text-warning'>
                         {item.Price}
-                      </span>
+                      </em>
                     </div>
 
                   </div>) : <h2>Data is loading</h2>}
@@ -315,9 +314,9 @@ export default function Home() {
                     <img src={star} className='starImg' />
                   </span>
                 </div>
-                <span className='productNamex productNamexx headline'>
+                <em className='productNamex productNamexx headline'>
                   &#8377; 55999.00
-                </span>
+                </em>
 
 
               </div>
@@ -344,9 +343,9 @@ export default function Home() {
                       <img src={star} className='starImg' />
                     </span>
                   </div>
-                  <span className='productNamex productNamexx headline'>
+                  <em className='productNamex productNamexx headline'>
                     &#8377; 109999.00
-                  </span>
+                  </em>
 
 
                 </div>
@@ -369,9 +368,9 @@ export default function Home() {
                     <img src={star} className='starImg' />
                   </span>
                 </div>
-                <span className='productNamex productNamexx headline'>
+                <em className='productNamex productNamexx headline'>
                   &#8377; 309999.00
-                </span>
+                </em>
 
 
               </div>
@@ -398,9 +397,9 @@ export default function Home() {
                       <img src={star} className='starImg' />
                     </span>
                   </div>
-                  <span className='productNamex productNamexx headline'>
+                  <em className='productNamex productNamexx headline'>
                     &#8377; 103499.00
-                  </span>
+                  </em>
 
 
                 </div>
@@ -428,9 +427,9 @@ export default function Home() {
                     <img src={star} className='starImg' />
                   </span>
                 </div>
-                <span className='productNamex productNamexx headline'>
+                <em className='productNamex productNamexx headline'>
                   &#8377; 305999.00
-                </span>
+                </em>
 
 
               </div>

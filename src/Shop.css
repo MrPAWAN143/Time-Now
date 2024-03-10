@@ -38,7 +38,7 @@
 
 .ns-shop-item {
     width: 25%;
-    height: 450px;
+    height: 425px;
     padding: 15px;
 
 }
@@ -505,7 +505,7 @@ font-size: 12px !important;
 .AboutFooter{
     border-top:1px solid rgba(255, 255, 255, 0.845);
     /* border-bottom:1px solid rgba(255, 255, 255, 0.845); */
-    padding: 0px 40px 40px 40px;
+    padding: 0px 0px 0px 0px;
 }
 
 .border_right{
@@ -593,4 +593,178 @@ transition: 500ms ease-in-out;
     background-image: url(./components/assest/images/wnews1_1.webp);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.containeraa{
+    height: auto;
+    width: 100%;
+    background-color: black !important;
+  
+}
+.helpseach{
+    /* height: auto; */
+
+}
+
+.askquestion{
+    height:55px;
+    background-color: rgb(220, 214, 214);
+}
+
+.ss{
+    height: 300px;
+
+    border: 1px solid black;
+}
+.requarment{
+    width: 80%;
+    margin: auto;
+   min-height: 300px;
+    /* background-color: white; */
+    margin-top: 0px;
+}
+
+
+.help_item{
+    /* width: 300px; */
+    height: 300px;
+    /* border: 1px solid red; */
+    flex: 1;
+    background-color:  rgb(234, 231, 231);
+}
+.ns_card img{
+    width: 80px;
+    height: 80px;
+   text-align: center;
+   margin-top: 60px;
+   margin-left: 50%;
+   transform: translateX(-50%)
+}
+.cardHead{
+   margin: auto;
+   font-size: 1.3em;
+}
+.cardparagraph{
+font-size: .8rem;
+}
+
+.white{
+    color: white !important;
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Contact Form */
+.formrow{
+    min-height: 600px;
+    /* border-top: 0.5px solid white; */
+}
+.formx{
+    height: 100%;
+    /* border: 1px solid white; */
+    border: none !important;
+}
+
+.fomahead{
+    border-bottom: 0.4px solid rgb(211, 204, 204);
+    padding-bottom: 20px;
+}
+.contactUs{
+    height: 100%;
+    /* border: 1px solid white; */
+    margin-top: 0px !important;
+}
+.inputform{
+    height: 45px !important;
+    border-radius: 2px;
+    margin-top: 10px;
+   
+}
+.inputform:focus{
+   border-bottom: 1px solid green;
+   border-right: 1px solid green;
+   border-top: 1px solid green;
+    border-left: 2px solid red;
+    transition:500ms ease-in-out;
+}
+.inputform::placeholder{
+    font-size: 16px;
+   
+}
+
+.textarea:focus{
+    outline: none;
+    border-left: 2px solid red !important;
+    border-right: 1px solid green;
+    border-bottom: 1px solid green;
+    border-top: 1px solid green;
+    border-radius: 2px;
+    transition:500ms ease-in-out;
+
+    
+}
+
+.btn-primary{
+padding: 11px 70px;
+margin-top: 20px;
+background-color:rgba(14, 131, 174, 0.833) ;
+}
+
+.fh{
+    font-size: 16px;
+}
+.f{
+    font-size: 13px ;
+}
+
+
+
+
+/* ...>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>......>>>>>>>>>>>>>> */
+
+.storeItem{
+    height: 420px;
+    border: 0.4px solid rgb(176, 168, 168);
+}
+
+.ns_storeItem{
+    width:90%;
+    margin: auto;
+    height:75%;
+
+}
+
+.watchstoreconteint{
+    width: 90% !important;
+    margin: auto;
+    padding: 5px 0px;
+    height: auto;
+
+}
+.watchstorePrice{
+    color: rgb(232, 97, 97) !important;
+}
+.productnamex{
+    font-size: 1em
+}
+.module{
+    font-size: .9rem;
+}
+.offer{
+    right: -12px;
+    top: -15px;
+    border-radius: 4px;
 }

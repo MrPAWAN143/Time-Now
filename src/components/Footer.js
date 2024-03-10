@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import storeimage from './assest/images/storeImage.webp'
+import '../App.css'
+import '../Shop.css'
 
 
 export default function Footer() {
@@ -18,8 +20,8 @@ export default function Footer() {
 
 
                         <div className='footerItems_1 '>
-                            <img src={storeimage} className='img-fluid object-fit-cover rounded rounded-2' />
-                            <address className='headline '>
+                            <img src={storeimage} className='img-fluid object-fit-cover rounded rounded-1' />
+                            <address className='headline fs-6'>
                                 717 South ex metro station gate no 2 g block 110023
                             </address>
                         </div>

@@ -15,7 +15,7 @@ body {
 
 
 :root {
-    --Pblack: rgba(21, 48, 58, 0.74);
+    --Pblack: rgba(14, 131, 174, 0.833);
     --Black: #0d0f149b;
     --Second: #0D0E0F;
     --DipBlue: #1D69DB;
@@ -53,14 +53,14 @@ body {
     padding: 5px 0px;
     outline: none;
     font-size: 16px;
-    color: var(--Pblack);
+    color: rgb(41, 40, 40);
     border-radius: 0px !important;
     background-color: #ffffff00;
 
 }
 
 .searchbox::placeholder {
-    color: var(--Pblack);
+    color: rgb(41, 40, 40);
     font-size: 16px
 }
 
@@ -389,7 +389,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 1px solid rgb(146, 141, 141);
+    /* border-bottom: 1px solid rgb(146, 141, 141); */
 }
 
 .Ncontent {
@@ -458,7 +458,7 @@ header {
     width: 33.33333%;
     height: 100%;
     /* border: 1px solid white; */
-    padding: 20px ;
+    /* padding: 20px ; */
 }
 .ns_item{
     width: 90%;
@@ -472,11 +472,11 @@ header {
 
 }
 .disss{
- width: 90%;
+ width: 85%;
  height: 20%;
  margin: auto;
  /* border: 1px solid white; */
- padding: 10px 30px 10px 0px ;
+ padding: 10px 0px 10px 0px ;
 
 }
 .productNamex{
@@ -642,7 +642,7 @@ transition: 500ms ease-in-out;
     font-size: 12px !important;
     color: rgb(232, 97, 97) !important;
     text-align: center !important;
-    margin-left: -25px !important;
+    margin-left: -34px !important;
 }
 
 .productnameF{

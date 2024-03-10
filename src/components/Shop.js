@@ -29,9 +29,9 @@ import Footer from './Footer'
 
 export default function Shop() {
 
- 
 
-  
+
+
 
   const [product, setproduct] = useState([
     {
@@ -128,17 +128,17 @@ export default function Shop() {
 
 
   ]
-  
-  
+
+
   )
- 
+
 
   return (
 
 
     <>
 
-   
+
 
 
 
@@ -223,7 +223,7 @@ export default function Shop() {
               </span>
             </div>
             <div className='ns-shop-item'>
-              <Link to={'about'}>
+              <Link to={'watchstore'}>
                 <div className='Shop_item_0 si_4 position-relative'>
                   <div className='overlay'>
                     <span className='productName  fs-4 text-white d-block mt-2 w-100 text-center zn-4 lh'>
@@ -302,7 +302,7 @@ export default function Shop() {
 
             {(product != null) ? product.map((item) => <Link to={'/#'} key={item.id} className='shopItem nav-link'>
               <div className='border_right imageItem'>
-                <img src={item.Images.image_1} className='shopImageAll w-100 h-100 object-fit-cover'/>
+                <img src={item.Images.image_1} className='shopImageAll w-100 h-100 object-fit-cover' />
               </div>
               <div className='border_right ProductNameItem p-3'>
 
@@ -339,10 +339,10 @@ export default function Shop() {
 
 
 
-          <Footer />
+      <Footer />
 
-    
-      
+
+
 
     </>
 
