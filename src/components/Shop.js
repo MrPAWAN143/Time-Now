@@ -142,7 +142,7 @@ export default function Shop() {
 
 
 
-      <div className='container-fluit pt-3 pb-3 shop'>
+      <div className='container-fluit  pt-3 pb-3 shop'>
         <div className='backgroundImage position-relative' style={{
           backgroundImage: `url(${bk})`,
           backgroundSize: "cover",

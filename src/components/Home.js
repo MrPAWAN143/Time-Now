@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../App.css';
 import '../Shop.css';
+
 import bk from './assest/images/background.jpg'
 import video from './../default.mp4'
 import rightarrow from './assest/icons/chevron-right.svg'

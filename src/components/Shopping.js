@@ -1,5 +1,7 @@
 import React from 'react'
 import CartFooter from './CartFooter'
+import Watchstor_1 from './assest/images/Watchstore_1.webp'
+import Watchstor_2 from './assest/images/Watchstore_2.webp'
 
 export default function Shopping() {
     return (
@@ -14,8 +16,8 @@ export default function Shopping() {
 
                         <div className='addProducts d-flex align-items-center justify-space-evenely mb-3 p-2'>
 
-                            <div className='cartImg '>
-                                <img src={''} className='w-100 h-100 obeject-fit-cover' />
+                            <div className='cartImg  h-100 overflow-hidden'>
+                                <img src={Watchstor_1} className='' />
                             </div>
                             <div className='cartProductname d-flex'>
 
@@ -40,7 +42,7 @@ export default function Shopping() {
                         <div className='addProducts d-flex align-items-center justify-space-evenely p-2 '>
 
                             <div className='border border-1 cartImg '>
-                                <img src={''} className='w-100 h-100 obeject-fit-cover' />
+                                <img src={Watchstor_2} className='w-100 h-100 obeject-fit-cover' />
                             </div>
                             <div className='cartProductname d-flex'>
 

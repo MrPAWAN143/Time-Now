@@ -173,6 +173,13 @@
     margin-top: 30px;
     padding-bottom: 30px;
 }
+.addProducts img{
+    width: 150px;
+    height: 130px;
+   
+
+    /* height: 130px; */
+}
 
 .cartImg {
     width: 150px;
@@ -764,7 +771,7 @@ background-color:rgba(14, 131, 174, 0.833) ;
     font-size: .9rem;
 }
 .offer{
-    right: -12px;
-    top: -15px;
-    border-radius: 4px;
+    right: -30px;
+    top: -20px;
+    border-radius: 0px;
 }
