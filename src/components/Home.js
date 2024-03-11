@@ -145,15 +145,15 @@ export default function Home() {
 
       <div className='container-xl-fluit pt-3 pb-3'>
 
-        <div className=' home'>
+        <div className='home position-relative'>
           {/* <video autoPlay muted loop id='myvideo' >
             <source src={video} type='video/mp4' />
           </video> */}
 
-          <div className='backgroundImage position-relative' style={{ backgroundImage: `url(${bk})` }}>
-            <video className='my-video' muted={true} autoPlay={true} loop={true}>
-              <source src={video}></source>
-            </video>
+          <div className='backgroundImage'>
+              <video className='my-video' muted={true} autoPlay={true} loop={true}>
+                <source src={video}></source>
+              </video>
             <div className='overlay'>
               <div className='hero-content'>
                 <h3 className='display-5 text-center headline'>
