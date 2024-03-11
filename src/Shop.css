@@ -185,7 +185,12 @@
     width: 150px;
     height: 130px;
     /* padding: 20px; */
+    background-color: white;
 
+}
+
+.cartImg img{
+    object-fit: contain;
 }
 
 .cartProductname {
@@ -294,8 +299,11 @@
 .CDImg {
     width: 80px;
     height: 80px;
+    background-color: white;
 }
-
+.CDImg img{
+    object-fit: contain;
+}
 .CDcartProductname {
     flex-direction: column;
     margin-left: 20px;

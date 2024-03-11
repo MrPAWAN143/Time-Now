@@ -17,7 +17,7 @@ export default function Shopping() {
                         <div className='addProducts d-flex align-items-center justify-space-evenely mb-3 p-2'>
 
                             <div className='cartImg  h-100 overflow-hidden'>
-                                <img src={Watchstor_1} className='' />
+                                <img src={Watchstor_1} alt='abc' className='' />
                             </div>
                             <div className='cartProductname d-flex'>
 

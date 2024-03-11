@@ -19,6 +19,7 @@ import Watchstrore_10 from './assest/images/Watchstore_10.webp'
 import Watchstrore_11 from './assest/images/Watchstore_11.webp'
 import Watchstrore_12 from './assest/images/Watchstore_12.webp'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 
 
@@ -498,7 +499,13 @@ export default function WatchStore(props) {
                             </Link>  </div>) : '<h3>Lodding</h3>'}
 
                 </div>
+
+
+                <Footer/>
             </div>
+
+
+
 
         </>
     )
